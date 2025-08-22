@@ -1,0 +1,18 @@
+/* Reset */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estructura principal */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ocupa toda la ventana */
+}
+
+/* Contenido principal */
+main {
+  flex: 1; /* ocupa el espacio disponible y empuja el footer abajo */
+}

@@ -1,0 +1,51 @@
+<!-- Card explicativo -->
+<div class="registro-card">
+  <h3>👋 Bienvenido</h3>
+  <p>
+    Completa el formulario con tus datos personales.  
+    Elige correctamente tu <b>rol</b> para que el sistema te asigne los permisos adecuados.
+  </p>
+
+  <div class="roles-info">
+    <h4>ℹ️ ¿Qué significa cada rol?</h4>
+    <ul>
+      <li><b>Usuario:</b> Acceso básico al sistema, puede consultar y usar las funciones principales.</li>
+      <li><b>Admin:</b> Acceso avanzado, puede gestionar usuarios, configurar opciones y administrar el sistema.</li>
+    </ul>
+  </div>
+
+  <p class="tip">💡 Usa un correo válido y una contraseña segura para proteger tu cuenta.</p>
+</div>
+
+
+<!-- Registro de Usuario -->
+<section class="registro">
+  <h2>Registro Usuario</h2>
+  <form [formGroup]="form" (ngSubmit)="registrar()" class="registro-form">
+    
+    <div class="form-group">
+      <input formControlName="nombre" placeholder="Nombre" />
+    </div>
+    
+    <div class="form-group">
+      <input formControlName="email" placeholder="Email" />
+    </div>
+    
+    <div class="form-group">
+      <input type="password" formControlName="password" placeholder="Contraseña" />
+    </div>
+    
+    <div class="form-group">
+      <label>Rol</label>
+      <select formControlName="rol">
+        <option value="usuario">Usuario</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+    
+    <button type="submit" [disabled]="form.invalid" class="btn-registro">Registrar</button>
+  </form>
+
+  <p class="mensaje">{{mensaje}}</p>
+</section>
+

@@ -1,0 +1,47 @@
+<!-- Login -->
+<!-- Card de ayuda -->
+  <div class="login-info-card">
+    <h3>ℹ️ Información importante</h3>
+    <p>El acceso al sistema se realiza <strong>únicamente con el correo registrado</strong>.</p>
+    <p>Si tienes inconvenientes para ingresar, por favor contacta con el equipo de soporte:</p>
+    <p class="soporte">📧 soporte@miproyectofinal.com</p>
+  </div>
+
+<section class="login">
+  <h2>Iniciar Sesión</h2>
+  <form [formGroup]="form" (ngSubmit)="login()" class="login-form">
+
+    <!-- Email -->
+    <div class="form-group">
+      <input 
+        type="email" 
+        formControlName="email" 
+        placeholder="Correo electrónico" />
+      <div *ngIf="form.get('email')?.touched && form.get('email')?.invalid" class="error">
+        <div *ngIf="form.get('email')?.errors?.['required']">El correo es obligatorio.</div>
+        <div *ngIf="form.get('email')?.errors?.['email']">Correo no válido.</div>
+      </div>
+    </div>
+
+    <!-- Contraseña -->
+    <div class="form-group">
+      <input 
+        type="password" 
+        formControlName="password" 
+        placeholder="Contraseña" />
+      <div *ngIf="form.get('password')?.touched && form.get('password')?.invalid" class="error">
+        <div *ngIf="form.get('password')?.errors?.['required']">La contraseña es obligatoria.</div>
+        <div *ngIf="form.get('password')?.errors?.['minlength']">Mínimo 6 caracteres.</div>
+      </div>
+    </div>
+
+    <!-- Botón Login -->
+    <button type="submit" [disabled]="form.invalid" class="btn-login">Ingresar</button>
+  </form>
+
+  <p class="mensaje">{{ mensaje }}</p>
+
+  
+  
+</section>
+

@@ -1,0 +1,114 @@
+/* Animaciones */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.perfil {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px 25px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  animation: fadeInUp 0.8s ease;
+}
+
+.perfil h2 {
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 1.8rem;
+}
+
+/* Card */
+.perfil-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.perfil-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+/* Avatar */
+.perfil-avatar {
+  width: 80px;
+  height: 80px;
+  background: #3498db;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Info con animación secuencial */
+.perfil-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.perfil-info p:nth-child(1) { animation-delay: 0.2s; }
+.perfil-info p:nth-child(2) { animation-delay: 0.4s; }
+.perfil-info p:nth-child(3) { animation-delay: 0.6s; }
+.perfil-info p:nth-child(4) { animation-delay: 0.8s; }
+
+/* Badge del rol */
+.rol-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.rol-admin {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.rol-usuario {
+  background-color: #95a5a6;
+  color: #fff;
+}
+
+/* Botón logout */
+.btn-logout {
+  margin-top: 25px;
+  padding: 12px 24px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Estado sin usuario */
+.no-user {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}

@@ -1,0 +1,37 @@
+<section class="usuarios">
+  <h2>Listado de Usuarios</h2>
+
+  <div class="info-usuarios">
+    <span>Total de usuarios: {{ users.length }}</span>
+  </div>
+
+  <div class="tabla-container">
+    <table class="tabla-usuarios">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Rol</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ user.nombre }}</td>
+          <td>{{ user.email }}</td>
+          <td>
+            <span 
+              class="rol"
+              [ngClass]="{
+                'rol-admin': user.rol === 'admin',
+                'rol-usuario': user.rol === 'usuario'
+              }">
+              {{ user.rol }}
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

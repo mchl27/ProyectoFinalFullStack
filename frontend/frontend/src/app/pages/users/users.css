@@ -1,0 +1,107 @@
+/* Animación de entrada */
+@keyframes fadeInRow {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.usuarios {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  animation: fadeInRow 0.8s ease;
+}
+
+.usuarios h2 {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.info-usuarios {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #34495e;
+  animation: fadeInRow 0.8s ease;
+}
+
+/* Contenedor tabla */
+.tabla-container {
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Tabla */
+.tabla-usuarios {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Encabezado */
+.tabla-usuarios thead {
+  background-color: #3498db;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+/* Filas animadas */
+.tabla-usuarios tbody tr {
+  animation: fadeInRow 0.6s ease forwards;
+  opacity: 0;
+}
+
+.tabla-usuarios tbody tr:nth-child(1) { animation-delay: 0.1s; }
+.tabla-usuarios tbody tr:nth-child(2) { animation-delay: 0.2s; }
+.tabla-usuarios tbody tr:nth-child(3) { animation-delay: 0.3s; }
+.tabla-usuarios tbody tr:nth-child(4) { animation-delay: 0.4s; }
+/* Puedes seguir aumentando para más filas */
+
+/* Hover en filas */
+.tabla-usuarios tbody tr:hover {
+  background-color: #f4faff;
+  transform: scale(1.01);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+/* Roles */
+.rol {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.rol-admin {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.rol-usuario {
+  background-color: #95a5a6;
+  color: white;
+}

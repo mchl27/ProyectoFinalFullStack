@@ -1,0 +1,52 @@
+.navbar {
+  background-color: #2c3e50;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Animación de "flotar" */
+.nav-list li a:hover {
+  background-color: #34495e;
+  color: #ffffff;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Subrayado animado */
+.nav-list li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e74c3c;
+  transition: width 0.3s;
+}
+
+.nav-list li a:hover::after {
+  width: 100%;
+}
+
+.nav-list li a.active {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
