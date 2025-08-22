@@ -15,12 +15,19 @@ Incluye backend con Node.js, Express y MongoDB, usando JWT para autenticación y
 ## 📂 Estructura del proyecto
 /backend
 |-- server.js
+
 |-- routes/
+
 |-- auth.js
+
 |-- models/
+
   |-- User.js
+
 |-- middleware/
+
   |-- authMiddleware.js
+
 |-- .env
 
 ---
