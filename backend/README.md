@@ -1,4 +1,4 @@
-# 🖥️ Sistema de Gestión Backend
+# 🖥️ Proyecto Final Backend
 
 ## 📄 Descripción
 Proyecto de gestión de usuarios con autenticación y roles (`admin` y `usuario`).  
@@ -15,24 +15,13 @@ Incluye backend con Node.js, Express y MongoDB, usando JWT para autenticación y
 ## 📂 Estructura del proyecto
 /backend
 |-- server.js
-
 |-- routes/
-
 |-- auth.js
-
 |-- models/
-
-|-- User.js
-
+  |-- User.js
 |-- middleware/
-
-|-- authMiddleware.js
-
+  |-- authMiddleware.js
 |-- .env
-
-yaml
-Copy
-Edit
 
 ---
 
@@ -48,29 +37,38 @@ Edit
 1. Ir a la carpeta backend:
 ```bash
 cd backend
-Instalar dependencias:
+```
 
-bash
+2. Instalar dependencias:
+```bash
 npm install
-Crear un archivo .env en la raíz del backend con las siguientes variables:
+```
 
+3. Crear un archivo .env en la raíz del backend con las siguientes variables:
+```bash
 env
 PORT=4000
 MONGO_URI=tu_URI_de_mongodb
 JWT_SECRET=tu_clave_secreta
 Ejecutar el servidor en modo desarrollo:
+```
 
-bash
+
+4. Ejecutar Servidor
+```bash
 npm run dev
+```
+
 O en modo producción:
-
-bash
+```bash
 node server.js
-Verificar que el servidor funciona abriendo en el navegador o con Postman:
+```
 
+5. Verificar que el servidor funciona abriendo en el navegador o con Postman:
+```bash
 nginx
 GET http://localhost:4000/
-
+```
 Debería responder: API funcionando 🚀
 
 📌 Endpoints principales
@@ -84,3 +82,4 @@ GET /api/auth/users → Listar todos los usuarios (solo admin)
 
 🧑‍💻 Autor
 Nombre: Michael Andres Lopez Cardenas
+Diplomado Desarrollo Web Full Stack
