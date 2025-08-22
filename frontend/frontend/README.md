@@ -34,40 +34,70 @@ Permite:
 
 ## 📂 Estructura del proyecto (src/app)
 /app
+
   /components
+
     /navbar
       navbar.ts       # Lógica del componente Navbar
       navbar.html     # Template del Navbar
       navbar.css      # Estilos del Navbar
       navbar.spec.ts  # Pruebas unitarias del Navbar
+
   /guards
+
     auth-guard.ts     # Guard para proteger rutas
   /pages
+
     /about
+
     /home
+
     /login
+
       login.ts
+      
       login.html
+
       login.css
+
     /profile
+
       profile.ts
+
       profile.html
+
       profile.css
+
     /register
+
       register.ts
+
       register.html
+
       register.css
+
     /users
+
       users.ts
+
       users.html
+
       users.css
+
   /services
+
     auth.ts           # Servicio de autenticación
+
   app.ts              # Componente raíz
+
   app.html
+
   app.css
+  
   app.routes.ts       # Definición de rutas
+
 main.ts               # Inicialización de la aplicación
+
 index.html            # HTML principal
 
 ---
