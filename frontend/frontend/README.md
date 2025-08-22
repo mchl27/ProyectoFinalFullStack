@@ -1,33 +1,38 @@
-🌐 Sistema de Gestión Frontend
-📄 Descripción
+# 🌐 Proyecto Final Frontend
 
+## 📄 Descripción
 Este es el frontend del Sistema de Gestión de Usuarios con autenticación y roles (admin y usuario).
 Está construido con Angular Standalone Components y se comunica con el backend mediante HTTP.
+
 Permite:
 
-Registro y login de usuarios
+- Registro y login de usuarios
 
-Visualización del perfil del usuario
+- Visualización del perfil del usuario
 
-Listado de todos los usuarios (solo admins)
+- Listado de todos los usuarios (solo admins)
 
-Navegación entre páginas usando Angular Router
+- Navegación entre páginas usando Angular Router
 
-🛠️ Tecnologías usadas
+---
 
-Framework: Angular 17+
+## 🛠️ Tecnologías usadas
 
-Lenguaje: TypeScript, HTML, CSS
+- Framework: Angular 17+
 
-Módulos principales: ReactiveFormsModule, RouterModule, HttpClientModule
+- Lenguaje: TypeScript, HTML, CSS
 
-Gestión de estado: Signals de Angular para reactividad simple
+- Módulos principales: ReactiveFormsModule, RouterModule, HttpClientModule
 
-Servicios: AuthService para comunicación con backend
+- Gestión de estado: Signals de Angular para reactividad simple
 
-Guardias: AuthGuard para proteger rutas
+- Servicios: AuthService para comunicación con backend
 
-📂 Estructura del proyecto (src/app)
+- Guardias: AuthGuard para proteger rutas
+
+---
+
+## 📂 Estructura del proyecto (src/app)
 /app
   /components
     /navbar
@@ -65,15 +70,19 @@ Guardias: AuthGuard para proteger rutas
 main.ts               # Inicialización de la aplicación
 index.html            # HTML principal
 
-⚙️ Requisitos previos
+---
 
-Node.js >= 18
+## ⚙️ Requisitos previos
 
-Angular CLI
+- Node.js >= 18
 
-Backend funcionando en http://localhost:4000
+- Angular CLI
 
-npm o yarn
+- Backend funcionando en http://localhost:4000
+
+- npm o yarn
+
+---
 
 🚀 Instrucciones de instalación y ejecución
 
