@@ -41,6 +41,11 @@ Incluye backend con Node.js, Express y MongoDB, usando JWT para autenticación y
 
 ## 🚀 Instrucciones de ejecución (Backend)
 
+Clonar el repositorio o copiar la carpeta frontend:
+```bash
+git clone <[URL_DEL_REPOSITORIO](https://github.com/mchl27/ProyectoFinalFullStack.git)>
+```
+
 1. Ir a la carpeta backend:
 ```bash
 cd backend
