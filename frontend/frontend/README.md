@@ -117,48 +117,51 @@ index.html            # HTML principal
 🚀 Instrucciones de instalación y ejecución
 
 Clonar el repositorio o copiar la carpeta frontend:
-
-git clone <URL_DEL_REPOSITORIO>
+```bash
+git clone <[URL_DEL_REPOSITORIO](https://github.com/mchl27/ProyectoFinalFullStack.git)>
 cd frontend
+```
 
 
-Instalar dependencias:
-
+1. Instalar dependencias:
+```bash
 npm install
+```
 
-
-Ejecutar la aplicación:
-
+2. Ejecutar la aplicación:
+```bash
 ng serve
-
+```
 
 Angular servirá la aplicación en http://localhost:4200 por defecto.
 
 Abrir el navegador y acceder a esa URL para usar la aplicación.
 
-🔑 Uso e implementación
+---
+
+## 🔑 Uso e implementación
 
 Navegación:
-La barra de navegación permite moverse entre las páginas Home, About, Login, Register, Profile y Users.
+- La barra de navegación permite moverse entre las páginas Home, About, Login, Register, Profile y Users.
 
 Autenticación:
-
-Registro de usuario: /register
+- Registro de usuario: /register
 
 Login: /login
-
-Perfil: /profile (requiere token)
+- Perfil: /profile (requiere token)
 
 Listado de usuarios: /users (solo admins)
 
 Servicios y token:
-AuthService maneja las peticiones al backend y el almacenamiento del token JWT en localStorage.
-Todos los endpoints protegidos incluyen el token en el header Authorization: Bearer <token>.
+- AuthService maneja las peticiones al backend y el almacenamiento del token JWT en localStorage.
+- Todos los endpoints protegidos incluyen el token en el header Authorization: Bearer <token>.
 
 Rutas protegidas:
-AuthGuard se puede aplicar a rutas sensibles (/profile, /users) para bloquear acceso a usuarios no autenticados.
+- AuthGuard se puede aplicar a rutas sensibles (/profile, /users) para bloquear acceso a usuarios no autenticados.
 
-🧩 Personalización
+---
+
+## 🧩 Personalización
 
 Cambiar apiUrl en services/auth.ts si el backend está en otra URL.
 
@@ -169,3 +172,4 @@ Agregar nuevas páginas siguiendo la estructura de pages.
 🧑‍💻 Autor
 
 Nombre: Michael Andres Lopez Cardenas
+Diplomado Desarrollo Web Full Stack
